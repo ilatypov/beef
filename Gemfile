@@ -95,7 +95,7 @@ if ENV['BEEF_TEST']
   # nokogirl is needed by capybara which may require one of the below commands
   # sudo apt-get install libxslt-dev libxml2-dev
   # sudo port install libxml2 libxslt
-  gem 'capybara'
+  gem 'capybara', '>= 2.6.2'
   # RESTful API tests/generic command module tests
   gem 'rest-client', '~> 1.8.0'
 end
