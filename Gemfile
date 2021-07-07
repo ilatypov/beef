@@ -10,7 +10,7 @@ gem 'eventmachine'
 gem 'thin'
 gem 'sinatra'
 gem 'rack'
-gem 'em-websocket', '~> 0.3.6' # WebSocket support
+gem 'em-websocket', '~> 0.3.8' # WebSocket support
 gem 'uglifier'
 gem 'mime-types'
 
@@ -28,14 +28,14 @@ end
 
 gem 'ansi'
 gem 'term-ansicolor', :require => 'term/ansicolor'
-gem 'dm-core'
+gem 'dm-core', '>= 1.2.1'
 gem 'json'
-gem 'data_objects'
+gem 'data_objects', '>= 0.10.17'
 gem 'rubyzip', '>= 1.0.0'
 
 # SQLite support
 group :sqlite do
-  gem 'dm-sqlite-adapter'
+  gem 'dm-sqlite-adapter', '>= 1.2.0'
 end
 
 # PostgreSQL support
@@ -55,7 +55,7 @@ end
 
 gem 'parseconfig'
 gem 'erubis'
-gem 'dm-migrations'
+gem 'dm-migrations', '>= 1.2.0'
 
 # Metasploit Integration extension
 group :ext_msf do
@@ -74,7 +74,7 @@ end
 
 # network extension
 group :ext_network do
-  gem 'dm-serializer'
+  gem 'dm-serializer', '>= 1.2.2'
 end
 
 # QRcode extension
@@ -95,7 +95,7 @@ if ENV['BEEF_TEST']
   # nokogirl is needed by capybara which may require one of the below commands
   # sudo apt-get install libxslt-dev libxml2-dev
   # sudo port install libxml2 libxslt
-  gem 'capybara'
+  gem 'capybara', '>= 2.6.2'
   # RESTful API tests/generic command module tests
   gem 'rest-client', '~> 1.8.0'
 end
